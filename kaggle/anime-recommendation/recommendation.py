@@ -32,7 +32,7 @@ knn = NearestNeighbors(n_neighbors=9,algorithm= 'brute', metric= 'cosine')
 model = knn.fit(csr)
 
 # 3.予測
-## ハンガレンを読んでいる人に10のアニメを推薦する
+## ハガレンを読んでいる人に10のアニメを推薦する
 Anime = 'Fullmetal Alchemist'
 distance, indice = model.kneighbors(pivot_join.iloc[pivot_join.index== Anime].values.reshape(1,-1),n_neighbors=11)
 pivot_join.index[indice]
