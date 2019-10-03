@@ -2,8 +2,8 @@
 
 # 1.前処理
 ## データ入力
-ratings = pd.read_csv('/Users/ryonakay/develop/kaggle/anime/rating.csv')
-anime = pd.read_csv('/Users/ryonakay/develop/kaggle/anime/anime.csv')
+ratings = pd.read_csv('/Users/`whoami`/develop/kaggle/anime/rating.csv')
+anime = pd.read_csv('/Users/`whoami`/develop/kaggle/anime/anime.csv')
 
 ## anime_id同士で二つのテーブルを結合
 join = pd.merge(ratings_tmp, anime_tmp, on='anime_id')
